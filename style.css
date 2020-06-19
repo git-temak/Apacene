@@ -88,18 +88,18 @@
 
 	.hover-txt h3
 	{
-		font-size: 26px;
+		font-size: 23px;
 		font-weight: bold;
 	}
 
 	.hover-txt p
 	{
-		font-size: 24px;
+		font-size: 20px;
 	}
 
 	.hover-twitter
 	{
-		font-size: 24px;
+		font-size: 22px;
 		font-weight: bold;
 	}
 
@@ -272,6 +272,18 @@
 		padding: 20px 5px 15px;
 	}
 
+	.show-mobile img
+	{
+		width: 100%;
+	}
+
+	.team-info
+	{
+		background-color: #0d2a41;
+		color: white;
+		padding: 5px 0;
+	}
+
 /* CLIENTS SECTION */
 	.clients-section
 	{
@@ -442,5 +454,13 @@
 	.copyright-left
 	{
 	    display: table;
+	}
+}
+
+@media only screen and (min-width: 471px)
+{
+	.show-mobile
+	{
+		display: none;
 	}
 }
