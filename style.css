@@ -5,6 +5,7 @@
 	font-style: normal;
 	font-weight: normal;
 	box-sizing: border-box;
+	font-size: 18px;
 }
 
 /* ELEMENT-WIDE STYLING */
@@ -22,9 +23,14 @@
 		background: #EFF2FF;
 	}
 
+	/*h1
+	{
+		font-size: 2.5rem;
+	}*/
+
 	h2
 	{
-		font-size: 56px;
+		font-size: 50px;
 		font-weight: bold;
 		text-transform: capitalize;
 	}
@@ -48,7 +54,7 @@
 /* TEXT CUSTOMIZATION */
 	.heading1
 	{
-		font-size: 98px;
+		font-size: 5rem;
 		font-weight: bold;
 		line-height: 133px;
 		text-transform: uppercase;
@@ -62,12 +68,29 @@
 		text-transform: capitalize;
 	}
 
+	.text-style h1
+	{
+		font-size: 3rem;
+	    line-height: 80px;
+		font-weight: bold;
+		color: white;
+	}
+
 	.subtitle
 	{
-		font-size: 36px;
-		font-weight: normal;
-		line-height: 49px;
+		font-size: 2rem;
+		line-height: 50px;
+	    font-weight: normal;
 		color: white;
+	}
+
+	.text-style h2
+	{
+		font-size: 1.5rem;
+		line-height: 50px;
+		font-weight: normal;
+		color: white;
+		text-transform: none;
 	}
 
 	.btn-primary
@@ -111,17 +134,29 @@
 
 	.carousel .testimonial 
 	{
-		font-size: 30px;
-		line-height: 55px;
+		/*font-size: 1.5rem;
+		line-height: 55px;*/
 		font-style: italic;
 		color: #c4c8cb;
-		/*padding: 30px 0 10px;*/
 	}
 
 	.carousel .overview
 	{	
 		font-weight: 500;
-	    font-size: 26px;
+	    /*font-size: 26px;*/
+	}
+
+	.capsule-text h3
+	{
+		font-weight: 40px;
+		font-weight: bold;
+		color: #002eb2;
+	}
+
+	.capsule-text p
+	{
+		font-size: 30px;
+		font-weight: 300;
 	}
 	
 /* NAVIGATION MENU */
@@ -159,7 +194,7 @@
 		transition: width 1s;
 	}*/
 
-	.nav-item a:hover::after, a:active::after
+	.nav-item a:hover::after, .nav-item a:active::after
 	{
 		content: '';
 		background: #0000ff;
@@ -195,6 +230,7 @@
 		padding: 15% 0 23.5% 0;
 	}
 
+/***** ABOUT PAGE *****/
 /* ABOUT SECTION */
 	.about-section
 	{
@@ -301,8 +337,6 @@
 	{
 		background-color: #03182D;
 		color: white;
-		padding-top: 236px;
-		padding-bottom: 120px;
 	}
 
 	.col-center
@@ -334,7 +368,7 @@
 		width: 40px;
 	    height: 40px;
 	    margin-top: -20px;
-	    top: 50%;
+	    top: 40%;
 		background: none;
 	}
 
@@ -369,6 +403,41 @@
 	.carousel-indicators li.active
 	{
 		background-color: #1202fc;
+	}
+
+/***** SERVICES PAGE *****/
+/* SERVICES & EVENTS SECTION */
+	.capsule
+	{
+		border-radius: 15px;
+		background-color: white;
+		padding: 0;
+	}
+
+	.capsule-text
+	{
+		padding: 11%;
+	}
+
+	.capsule img
+	{
+		width: 100%;
+	}
+
+/* WORKS SECTION */
+	.works-section
+	{
+		padding-bottom: 150px;
+	}
+
+	.works-section img
+	{
+		width: 100%;
+	}
+
+	.img-margin
+	{
+		margin-top: 20%;
 	}
 
 /* FOOTER SECTION */
@@ -455,6 +524,11 @@
 	{
 	    display: table;
 	}
+
+	.separator
+	{
+    	width: 30%;
+	}	
 }
 
 @media only screen and (min-width: 471px)
