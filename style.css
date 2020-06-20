@@ -224,13 +224,28 @@
 		border-color: #0000FF;
 	}
 
+/***** HOME PAGE *****/
+/* HERO SECTION */
+	.hero
+	{
+		background-color: #03182D;
+	}
+
+	.hero-section
+	{
+		background-image: url('header banner.png');
+		background-repeat: no-repeat;
+	    background-position: center;
+	    background-size: cover;
+	}
+
+/***** ABOUT PAGE *****/
 /* HEADER SECTION */
 	.header-section
 	{
 		padding: 15% 0 23.5% 0;
 	}
 
-/***** ABOUT PAGE *****/
 /* ABOUT SECTION */
 	.about-section
 	{
