@@ -485,6 +485,11 @@
 		    margin: 30px 0;
 		}
 
+		.clients-section img
+		{
+			width: auto;
+		}
+
 	/* TESTIMONIALS SECTION */
 		.testimonials
 		{
