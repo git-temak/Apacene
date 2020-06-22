@@ -54,7 +54,7 @@
 /* TEXT CUSTOMIZATION */
 	.heading1
 	{
-		font-size: 5rem;
+		font-size: 4rem;
 		font-weight: bold;
 		line-height: 133px;
 		text-transform: uppercase;
@@ -68,9 +68,29 @@
 		text-transform: capitalize;
 	}
 
+	.contact-text h2
+	{
+		font-size: 2.9rem;
+	    font-weight: 800;
+	}
+
+	.contact-text p
+	{
+	    font-weight: 300;
+	    font-size: 22px;
+	    line-height: 36px;
+	}
+
+	.contact-text a
+	{
+	    font-size: 22px;
+	    line-height: 36px;
+	    color: #1304fe;
+	}
+
 	.text-style h1
 	{
-		font-size: 2.7rem;
+		font-size: 2.4rem;
 	    line-height: 80px;
 		font-weight: bold;
 		color: white;
@@ -107,6 +127,30 @@
 		border-radius: 10px 10px 0 0;
 		background-color: #0000FF;
 		margin-bottom: 100px;
+	}
+
+	.separator1
+	{
+		width: 20%;
+		height: 5px;
+		border-radius: 20px;
+		background-color: #0000FF;
+	}
+
+	.separator2
+	{
+		width: 25%;
+		height: 5px;
+		border-radius: 20px;
+		background-color: #0000FF;
+	}
+
+	.separator3
+	{
+		width: 5%;
+		height: 5px;
+		border-radius: 20px;
+		background-color: #0000FF;
 	}
 
 	.hover-txt h3
@@ -264,7 +308,7 @@
 		margin-top: 2px !important;
 	}
 
-	.nav-item a:hover, a:active, a
+	.nav-item a:hover/*, a:active, a*/
 	{
 		color: white !important;
 	}
@@ -293,7 +337,6 @@
 			background-repeat: no-repeat;
 		    background-position: top right;
 		    background-size: auto;
-		    height: 800px;
 		}
 
 		.hero-section button
@@ -334,6 +377,12 @@
 				margin-left: -16%;
 				margin-top: 100px;
 			}
+
+			.content-right
+			{
+				margin-top: 100px;
+				z-index: 2;
+			}
 		}
 
 		.content-box
@@ -354,12 +403,7 @@
 			background: #03182D;
 		}
 
-		.content-right
-		{
-			/*margin-left: 10px;*/
-			margin-top: 100px;
-			z-index: 2;
-		}
+		
 
 		/*.custom-index
 		{
@@ -601,6 +645,46 @@
 			margin-top: 20%;
 		}
 
+/***** CONTACT PAGE *****/
+	.separators
+	{
+		display: flex;
+	}
+
+	.contact-form
+	{
+		box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.14), 0px 4px 20px rgba(0, 0, 0, 0.25);
+	}
+
+	.form-style
+	{
+		border-top: 0px;
+		border-left: 0px;
+		border-right: 0px;
+	    border-radius: 0px;
+	}
+
+	.form-control:focus
+	{
+		border-color: #0000FF;
+		box-shadow: 0 0 0 0.1rem rgb(19, 4, 254, 0.6);
+	}
+
+	.form-style:focus
+	{
+		border-color: #0000FF;
+		border-top: 0px;
+		border-left: 0px;
+		border-right: 0px;
+		border-width: 2px;
+	    box-shadow: none;
+	}
+
+	.contacts-section
+	{
+		margin: 100px auto;
+	}
+
 /* FOOTER SECTION */
 	.footer
 	{
@@ -641,7 +725,7 @@
 	}
 
 /* MOBILE DEVICES RESPONSIVENESS */
-@media only screen and (max-width: 470px)
+/*@media only screen and (max-width: 470px)
 {
 	.heading1
 	{
@@ -682,12 +766,12 @@
 	{
     	width: 30%;
 	}	
-}
+}*/
 
-@media only screen and (min-width: 471px)
+@media only screen and (max-width: 471px)
 {
-	.show-mobile
-	{
-		display: none;
-	}
+	 .hero
+	 {
+	     background-position: center;
+	 }
 }
