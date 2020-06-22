@@ -732,13 +732,18 @@
 	.separator
 	{
     	width: 30%;
-	}	
-}
+	}
 
-@media only screen and (max-width: 471px)
-{
-	 .hero
+	.hero
 	 {
 	     background-position: center;
 	 }
+}
+
+@media only screen and (max-width: 320px)
+{
+	.text-style h1
+	{
+	    font-size: 2rem;
+	}
 }
