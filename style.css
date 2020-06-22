@@ -714,8 +714,6 @@
 	.copyright
 	{
 		border-top: 1px solid white;
-		padding-top: 10px;
-		padding-bottom: 10px;
 	}
 
 	.copyright-left
@@ -726,8 +724,6 @@
 	.copyright-left a
 	{
 	    color: white;
-	    padding-left: 2.5%;
-	    padding-right: 2.5%;
 	}
 
 /* MOBILE DEVICES RESPONSIVENESS */
@@ -751,16 +747,6 @@
 	.about-bg, .about-txt
 	{
 		border-radius: 0;
-	}
-
-	.footer-mob-space
-	{
-		padding: 0 15px;
-	}
-
-	.copyright-left
-	{
-	    display: table;
 	}
 
 	.separator
