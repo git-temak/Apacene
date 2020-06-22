@@ -466,8 +466,7 @@
 
 		.team-section .col
 		{
-			width: 347px;
-			height: auto;
+			height: 100%;
 			background-color: #0d2a41;
 			color: white;
 		}
@@ -642,6 +641,47 @@
 			margin-top: 20%;
 		}
 
+		.works-section #works-hover:hover, .works-section #works-hover-top:hover, .works-section #works-hover-bottom:hover
+		{
+			height: 100%;
+			background-color: #0d2a41;
+			color: white;
+		}
+
+		.works-section #works-hover-top:hover, .works-section #works-hover-bottom:hover
+		{
+			height: 50%;
+		}
+
+		.works-section #works-hover:hover .hover-img, .works-section #works-hover-top:hover .hover-img, .works-section #works-hover-bottom:hover .hover-img
+		{
+			opacity: 0.1;
+		}
+
+		.works-section #works-hover:hover .hover-txt
+		{
+			opacity: 1;
+		}
+
+		.works-section #works-hover-top:hover .hover-txt
+		{
+			top: 30%;
+			opacity: 1;
+		}
+
+		.works-section #works-hover-bottom:hover .hover-txt
+		{
+			top: 80%;
+			opacity: 1;
+		}
+
+		.works-info
+		{
+			background-color: #0d2a41;
+			color: white;
+			padding: 5px 0;
+		}
+
 /***** CONTACT PAGE *****/
 	.separators
 	{
@@ -707,48 +747,55 @@
 	}
 
 /* MOBILE DEVICES RESPONSIVENESS */
-@media only screen and (max-width: 470px)
-{
-	.heading1
+	@media only screen and (max-width: 470px)
 	{
-		font-size: 36px
+		.heading1
+		{
+			font-size: 36px
+		}
+
+		.subtitle
+		{
+	    	font-size: 26px;
+		}
+
+		.about-section
+		{
+			margin-top: 0;
+		}
+
+		.about-bg, .about-txt
+		{
+			border-radius: 0;
+		}
+
+		.separator
+		{
+	    	width: 30%;
+		}
+
+		.hero
+		 {
+		     background-position: center;
+		 }
+
+		 .team-info h3
+		 {
+		    font-size: 25px;
+		 }
+
+		 .works-info h3
+		 {
+		     font-size: 1.15rem;
+		    font-weight: 600;
+		 }
 	}
 
-	.subtitle
-	{
-    	font-size: 26px;
-	}
-
-	.about-section
-	{
-		margin-top: 0;
-	}
-
-	.about-bg, .about-txt
-	{
-		border-radius: 0;
-	}
-
-	.separator
-	{
-    	width: 30%;
-	}
-
-	.hero
-	 {
-	     background-position: center;
-	 }
-
-	 .team-info h3
-	 {
-	    font-size: 25px;
-	 }
-}
-
-@media only screen and (max-width: 320px)
-{
-	.text-style h1
-	{
-	    font-size: 2rem;
-	}
-}
+/* IPHONE 5 SCREEN SIZE RESPONSIVENESS */
+	@media only screen and (max-width: 320px)
+		{
+			.text-style h1
+			{
+			    font-size: 2rem;
+			}
+		}
