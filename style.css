@@ -74,7 +74,7 @@
 	    font-weight: 800;
 	}
 
-	.contact-text p
+	.contact-text p, .contact-text span
 	{
 	    font-weight: 300;
 	    font-size: 22px;
@@ -737,6 +737,11 @@
 	.hero
 	 {
 	     background-position: center;
+	 }
+
+	 .team-info h3
+	 {
+	    font-size: 25px;
 	 }
 }
 
