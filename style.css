@@ -263,6 +263,40 @@
 		color: #1301fe;
 	}
 
+	.actives button
+	{
+		background-color: #1301fe;
+		border: 2px solid #1301fe;
+		color: white;
+	}
+
+	.btn-outline-success:not(:disabled):not(.disabled):active
+	{
+	    color: #fff;
+	    background-color: #1301fe;
+		border-color: #1301fe;
+	}
+
+	.btn-outline-success:focus, .btn-outline-success.focus
+	{
+		box-shadow: 0 0 0 0.2rem rgba(90, 87, 136, 0.4);
+	}
+
+	.btn-outline-success
+	{
+		border-color: #0000FF;
+		color: white;
+		text-transform: uppercase;
+		font-size: 20px;
+		font-weight: bold;
+	}
+
+	.btn-outline-success:hover
+	{
+		background-color: #0000FF;
+		border-color: #0000FF;
+	}
+
 /* NAVIGATION MENU */
 	.logo
 	{
@@ -291,14 +325,7 @@
 		padding-right: 1rem;
 	}
 
-	/*.nav-item a:hover, a:active
-	{
-		border-bottom: 3px solid #0000FF;
-		border-radius: 10px 10px 0 0;
-		transition: width 1s;
-	}*/
-
-	.nav-item a:hover::after, .nav-item a:active::after
+	.nav-item a:hover::after, .nav-item a:active::after, .actives a::after
 	{
 		content: '';
 		background: #0000ff;
@@ -308,24 +335,14 @@
 		margin-top: 2px !important;
 	}
 
-	.nav-item a:hover/*, a:active, a*/
+	.nav-item a:hover, .nav-item a
 	{
 		color: white !important;
 	}
 
-	.btn-outline-success
+	.actives a
 	{
-		border-color: #0000FF;
-		color: white;
-		text-transform: uppercase;
-		font-size: 20px;
-		font-weight: bold;
-	}
-
-	.btn-outline-success:hover
-	{
-		background-color: #0000FF;
-		border-color: #0000FF;
+		color: #1301fe !important;
 	}
 
 /***** HOME PAGE *****/
@@ -506,11 +523,6 @@
 		{
 			font-size: 20px;
 			padding: 20px 5px 15px;
-		}
-
-		.show-mobile img
-		{
-			width: 100%;
 		}
 
 		.team-info
@@ -708,7 +720,6 @@
 
 	.copyright-left
 	{
-		float: left;
 	    padding: 20px 5px 15px;
 	}
 
@@ -719,13 +730,8 @@
 	    padding-right: 2.5%;
 	}
 
-	.copyright-right
-	{
-		float: right;
-	}
-
 /* MOBILE DEVICES RESPONSIVENESS */
-/*@media only screen and (max-width: 470px)
+@media only screen and (max-width: 470px)
 {
 	.heading1
 	{
@@ -735,11 +741,6 @@
 	.subtitle
 	{
     	font-size: 26px;
-	}
-
-	.hide-mobile
-	{
-		display: none;
 	}
 
 	.about-section
@@ -766,7 +767,7 @@
 	{
     	width: 30%;
 	}	
-}*/
+}
 
 @media only screen and (max-width: 471px)
 {
