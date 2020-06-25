@@ -349,11 +349,9 @@
 	/* HERO SECTION */
 		.hero
 		{
-			background-color: #03182D;
-			background-image: url('img/header banner.png');
+			background-image: url('img/hero-bg.png');
 			background-repeat: no-repeat;
-		    background-position: top right;
-		    background-size: auto;
+		    background-position: right;
 		}
 
 		.hero-section button
@@ -744,6 +742,21 @@
 	.copyright a
 	{
 	    color: white;
+	}
+
+/* EXTRA LARGE SCREEN DEVICES RESPONSIVENESS */
+	@media only screen and (min-width: 1024px) and (max-width: 1200px)
+	{
+		.hero-content
+		{
+			/*padding-top: 100px;*/
+		}
+
+		.hero
+		{
+		    background-position: center;
+		    height: 980px;
+		}
 	}
 
 /* MOBILE DEVICES RESPONSIVENESS */
