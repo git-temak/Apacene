@@ -324,12 +324,6 @@
 		padding-bottom: 5px;
 	}
 
-	.navbar-nav li
-	{
-		padding-left: 1rem;
-		padding-right: 1rem;
-	}
-
 	.nav-item a:hover::after, .nav-item a:active::after, .actives a::after
 	{
 		content: '';
@@ -338,7 +332,6 @@
 		height: 5px;
 		display: block;
 		margin-top: 2px !important;
-		/*width: 100px;*/
 	}
 
 	.nav-item a:hover, .nav-item a
@@ -562,12 +555,6 @@
 		    min-height: 290px;
 		}
 
-		.carousel .overview
-		{
-			padding-top: 20px;
-		    padding-bottom: 40px;
-		}
-
 		.carousel .carousel-control
 		{
 			width: 40px;
@@ -616,7 +603,6 @@
 		{
 			border-radius: 15px;
 			background-color: white;
-			padding: 0;
 		}
 
 		.capsule-text
@@ -683,15 +669,9 @@
 		{
 			background-color: #0d2a41;
 			color: white;
-			padding: 5px 0;
 		}
 
 /***** CONTACT PAGE *****/
-	.separators
-	{
-		display: flex;
-	}
-
 	.contact-form
 	{
 		box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.14), 0px 4px 20px rgba(0, 0, 0, 0.25);
