@@ -11,7 +11,6 @@
 /* ELEMENT-WIDE STYLING */
 	header
 	{
-		padding: 20px 15px;
 		background-image: url('img/header bg.png');
 		background-repeat: no-repeat;
 	    background-position: center;
@@ -297,6 +296,12 @@
 		border-color: #0000FF;
 	}
 
+	.btn:focus, .btn:active
+	{
+		outline: none !important;
+		box-shadow: none !important;
+	}
+
 /* NAVIGATION MENU */
 	.logo
 	{
@@ -333,6 +338,7 @@
 		height: 5px;
 		display: block;
 		margin-top: 2px !important;
+		/*width: 100px;*/
 	}
 
 	.nav-item a:hover, .nav-item a
@@ -744,18 +750,37 @@
 	    color: white;
 	}
 
+/* LARGE SCREEN DEVICES RESPONSIVENESS */
+	@media only screen and (min-width: 1024px) and (max-width: 1439px)
+	{
+		.hero
+		{
+		    background-position: center;
+		    height: 980px;
+		}
+	}
+
 /* EXTRA LARGE SCREEN DEVICES RESPONSIVENESS */
-	@media only screen and (min-width: 1024px) and (max-width: 1200px)
+	@media only screen and (min-width: 1440px)
 	{
 		.hero-content
 		{
-			/*padding-top: 100px;*/
+			padding-top: 120px;
 		}
 
 		.hero
 		{
 		    background-position: center;
-		    height: 980px;
+		    height: 1325px;
+		}
+	}
+
+/* MEDIUM SCREEN DEVICES RESPONSIVENESS */
+	@media only screen and (max-width: 991px)
+	{
+		.nav-item a:hover::after, .nav-item a:active::after, .actives a::after
+		{
+			display: none;
 		}
 	}
 
